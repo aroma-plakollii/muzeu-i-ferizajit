@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Jquery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="./Js/main.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Muzeu i Ferizajit</title>
+  </head>
+  <body>
+    <div class="home-container container-fluid p-0">
+      <!-- Navbar fillon ketu -->
+
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid mx-5">
+          <a class="navbar-brand text-light" href="./home.html">
+            <img src="./image/logo.png" class="img-fluid" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end mx-1"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link link-light active text-uppercase mx-xxl-4 mx-lg-3"
+                  aria-current="page"
+                  href="./home.html"
+                  >Ballina</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link-light mx-xxl-4 mx-lg-3 text-uppercase"
+                  href="./historiku.html"
+                  >Historiku
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link link-light mx-xxl-4 mx-lg-3 text-uppercase dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Eksponatet</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item link-light"
+                      href="./eksponatetKategoria1.html"
+                      >Kategoria 1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item link-light"
+                      href="./eksponatetKategoria2.html"
+                      >Kategoria 2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item link-light"
+                      href="./eksponatetKategoria3.html"
+                      >Kategoria 3</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link-light mx-xxl-4 mx-lg-3 text-uppercase"
+                  href="./aktivitetet.html"
+                  >Aktivitetet</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link-light mx-xxl-4 mx-lg-3 text-uppercase"
+                  href="./login.html"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar perfundon ketu -->
+
+      <!-- Slider fillon ketu -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel first-carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner first-carousel-inner">
+          <div class="carousel-item first-carousel-item active">
+            <img
+              src="./image/P2180688.jpg"
+              class="d-block img-fluid w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-flex flex-column">
+              <h5>
+                "Një vizitë në një muze është një kërkim për bukurinë, të
+                vërtetën dhe kuptimin në jetën tonë. Shkoni në muze sa më shpesh
+                të mundeni"
+              </h5>
+
+              <p>– Maira Kalman</p>
+            </div>
+          </div>
+          <div class="carousel-item first-carousel-item">
+            <img
+              src="./image/P1810750.jpg"
+              class="d-block img-fluid w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-flex flex-column">
+              <h5>
+                “Nuk është muze. Nuk është një vend me objekte; është një vend
+                idesh”
+              </h5>
+
+              <p>– Jeanie Kahnke</p>
+            </div>
+          </div>
+          <div class="carousel-item first-carousel-item">
+            <img
+              src="./image/DSCF0814.jpg"
+              class="d-block img-fluid w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-flex flex-column">
+              <h5>
+                “Bota moderne e mendon artin si shumë të rëndësishëm: diçka afër
+                kuptimit të jetës.”
+              </h5>
+
+              <p>– Alain de Botton</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Slider perfundon ketu -->
+
+      <!-- Historiku sneak peak fillon ketu -->
+      <div class="about-container container-fluid text-center">
+        <div class="about-text text-center">
+          <h1
+            class="text-light text-uppercase d-flex justify-content-center align-items-center"
+          >
+            <span class="line line-v1"></span>Historiku<span
+              class="line line-v1"
+            ></span>
+          </h1>
+          <h3 class="text-light">Muzeu i Ferizajit</h3>
+          <p class="text-light w-50 mx-auto">
+            Muzeu është themeluar me 2 qershor te vitit 2011 dhe gjendet në
+            kuadër të objektit të kulturës cila posedon një hapësire mjaft të
+            volitshme e cila ka kapacitetet e duhura për të pranuar mbi 1000
+            eksponate nga fusha ndryshme që e karakterizojnë punën e muzeut si
+            institucion i cili ruan promovon dhe prezanton vlerat e trashëgimisë
+            kulturore popullatës së Ferizajt.
+          </p>
+          <a
+            type="button"
+            class="btn btn-v1 btn-outline-light"
+            href="./historiku.html"
+          >
+            Mëso më shumë
+          </a>
+        </div>
+      </div>
+      <!-- Historiku sneak peak mbaron ketu -->
+
+      <!-- Eksponantet sneak peak fillon ketu -->
+      <div class="collection-container container-fluid text-center">
+        <h1
+          class="text-uppercase d-flex justify-content-center align-items-center"
+        >
+          <span class="line line-v2"></span>Eksponatet<span
+            class="line line-v2"
+          ></span>
+        </h1>
+
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              data-bs-toggle="tab"
+              data-bs-target="#koleksioni1"
+              >Koleksioni 1</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#koleksioni2"
+              >Koleksioni 2</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#koleksioni3"
+              >Koleksioni 3</a
+            >
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="koleksioni1">
+            <div
+              class="collection-img-container row justify-content-center align-items-center mx-1"
+            >
+              <div class="col-4">
+                <img src="./image/8-3.jpg" class="img-fluid w-50" alt="..." />
+              </div>
+
+              <div class="col-4">
+                <img
+                  src="./image/DSCF0809.jpg"
+                  class="img-fluid w-75"
+                  alt="..."
+                />
+              </div>
+            </div>
+
+            <a
+              type="button"
+              class="btn btn-v2 btn-outline-light"
+              href="./eksponatetKategoria1.html"
+            >
+              Shiko më shumë
+            </a>
+          </div>
+
+          <div class="tab-pane" id="koleksioni2">
+            <div
+              class="collection-img-container row justify-content-center align-items-center mx-1"
+            >
+              <div class="col-4">
+                <img
+                  src="./image/DSCF0829.jpg"
+                  class="img-fluid w-75"
+                  alt="..."
+                />
+              </div>
+
+              <div class="col-4">
+                <img
+                  src="./image/DSCF0860.jpg"
+                  class="img-fluid w-50"
+                  alt="..."
+                />
+              </div>
+            </div>
+
+            <a
+              type="button"
+              class="btn btn-v2 btn-outline-light"
+              href="./eksponatetKategoria2.html"
+            >
+              Shiko më shumë
+            </a>
+          </div>
+
+          <div class="tab-pane" id="koleksioni3">
+            <div
+              class="collection-img-container row justify-content-center align-items-center mx-1"
+            >
+              <div class="col-4">
+                <img
+                  src="./image/DSCF0851.jpg"
+                  class="img-fluid w-50"
+                  alt="..."
+                />
+              </div>
+
+              <div class="col-4">
+                <img
+                  src="./image/DSCF0864.jpg"
+                  class="img-fluid w-75"
+                  alt="..."
+                />
+              </div>
+            </div>
+
+            <a
+              type="button"
+              class="btn btn-v2 btn-outline-light"
+              href="./eksponatetKategoria3.html"
+            >
+              Shiko më shumë
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eksponantet sneak peak mbaron ketu -->
+
+    <!-- Aktivitetet sneak peak fillon ketu -->
+
+    <div class="event-container text-center">
+      <h1
+        class="text-uppercase d-flex justify-content-center align-items-center"
+      >
+        <span class="line line-v3"></span>Aktivitetet<span
+          class="line line-v3"
+        ></span>
+      </h1>
+      <div
+        id="carouselExampleDark"
+        class="carousel second-carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="indicator-btn active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner second-carousel-inner">
+          <div
+            class="carousel-item second-carousel-item active"
+            data-bs-interval="5000"
+          >
+            <div
+              class="carousel-caption second-carousel-caption d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="event-content d-flex flex-column flex-lg-row justify-content-center"
+              >
+                <div
+                  class="event-details row w-lg-75 w-100 pb-3 justify-content-center"
+                >
+                  <div
+                    class="col-3 date d-flex align-items-center justify-content-center"
+                  >
+                    <h2>17<span class="d-block">Shkurt</span></h2>
+                  </div>
+                  <div
+                    class="details col-xxl-8 col-lg-7 col-sm-9 col-8 bg-light"
+                  >
+                    <h3>Titulli</h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text. It has roots in a piece of classical Latin
+                      literature from 45 BC, making it over 2000 years old.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="event-details row w-lg-75 w-100 pb-3 justify-content-center"
+                >
+                  <div
+                    class="col-3 date d-flex align-items-center justify-content-center"
+                  >
+                    <h2>28<span class="d-block">Nëntor</span></h2>
+                  </div>
+                  <div
+                    class="details col-xxl-8 col-lg-7 col-sm-9 col-8 bg-light"
+                  >
+                    <h3>Titulli</h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text. It has roots in a piece of classical Latin
+                      literature from 45 BC, making it over 2000 years old.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="event-details row w-lg-75 w-100 pb-3 justify-content-center"
+                >
+                  <div
+                    class="col-3 date d-flex align-items-center justify-content-center"
+                  >
+                    <h2>31<span class="d-block">Dhjetor</span></h2>
+                  </div>
+                  <div
+                    class="details col-xxl-8 col-lg-7 col-sm-9 col-8 bg-light"
+                  >
+                    <h3>Titulli</h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text. It has roots in a piece of classical Latin
+                      literature from 45 BC, making it over 2000 years old.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="carousel-item second-carousel-item"
+            data-bs-interval="2000"
+          >
+            <div
+              class="carousel-caption second-carousel-caption d-flex align-items-center"
+            >
+              <div
+                class="event-content d-flex flex-column flex-lg-row justify-content-center"
+              >
+                <div
+                  class="event-details row w-lg-75 w-100 pb-3 justify-content-center"
+                >
+                  <div
+                    class="col-3 date d-flex align-items-center justify-content-center"
+                  >
+                    <h2>17<span class="d-block">Shkurt</span></h2>
+                  </div>
+                  <div
+                    class="details col-xxl-8 col-lg-7 col-sm-9 col-8 bg-light"
+                  >
+                    <h3>Titulli</h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text. It has roots in a piece of classical Latin
+                      literature from 45 BC, making it over 2000 years old.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="event-details row w-lg-75 w-100 pb-3 justify-content-center"
+                >
+                  <div
+                    class="col-3 date d-flex align-items-center justify-content-center"
+                  >
+                    <h2>28<span class="d-block">Nëntor</span></h2>
+                  </div>
+                  <div
+                    class="details col-xxl-8 col-lg-7 col-sm-9 col-8 bg-light"
+                  >
+                    <h3>Titulli</h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text. It has roots in a piece of classical Latin
+                      literature from 45 BC, making it over 2000 years old.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="event-details row w-lg-75 w-100 pb-3 justify-content-center"
+                >
+                  <div
+                    class="col-3 date d-flex align-items-center justify-content-center"
+                  >
+                    <h2>31<span class="d-block">Dhjetor</span></h2>
+                  </div>
+                  <div
+                    class="details col-xxl-8 col-lg-7 col-sm-9 col-8 bg-light"
+                  >
+                    <h3>Titulli</h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text. It has roots in a piece of classical Latin
+                      literature from 45 BC, making it over 2000 years old.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item second-carousel-item">
+            <div
+              class="carousel-caption second-carousel-caption d-flex align-items-center"
+            >
+              <div
+                class="event-content d-flex flex-column flex-lg-row justify-content-center"
+              >
+                <div
+                  class="event-details row w-lg-75 w-100 pb-3 justify-content-center"
+                >
+                  <div
+                    class="col-3 date d-flex align-items-center justify-content-center"
+                  >
+                    <h2>17<span class="d-block">Shkurt</span></h2>
+                  </div>
+                  <div
+                    class="details col-xxl-8 col-lg-7 col-sm-9 col-8 bg-light"
+                  >
+                    <h3>Titulli</h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text. It has roots in a piece of classical Latin
+                      literature from 45 BC, making it over 2000 years old.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="event-details row w-lg-75 w-100 pb-3 justify-content-center"
+                >
+                  <div
+                    class="col-3 date d-flex align-items-center justify-content-center"
+                  >
+                    <h2>28<span class="d-block">Nëntor</span></h2>
+                  </div>
+                  <div
+                    class="details col-xxl-8 col-lg-7 col-sm-9 col-8 bg-light"
+                  >
+                    <h3>Titulli</h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text. It has roots in a piece of classical Latin
+                      literature from 45 BC, making it over 2000 years old.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="event-details row w-lg-75 w-100 pb-3 justify-content-center"
+                >
+                  <div
+                    class="col-3 date d-flex align-items-center justify-content-center"
+                  >
+                    <h2>31<span class="d-block">Dhjetor</span></h2>
+                  </div>
+                  <div
+                    class="details col-xxl-8 col-lg-7 col-sm-9 col-8 bg-light"
+                  >
+                    <h3>Titulli</h3>
+                    <p>
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text. It has roots in a piece of classical Latin
+                      literature from 45 BC, making it over 2000 years old.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <a
+        type="button"
+        class="btn btn-v3 btn-outline-light mt-5"
+        href="./aktivitetet.html"
+      >
+        Shiko më shumë
+      </a>
+    </div>
+
+      <!-- Aktivitetet sneak peak mbaron ketu -->
+
+      <!-- Footer fillon ketu -->
+
+      <footer>
+        <div class="footer-content d-flex justify-content-between align-items-start">
+          <div class="footer-logo">
+            <h1 class="text-uppercase">Muzeu i ferizajit</h1>
+            <a class="text-light" href="./home.html">
+              <img src="./image/logo.png" class="img-fluid" alt="" />
+            </a>
+          </div>
+  
+          <div class="footer-links">
+              <h1 class="text-uppercase">Titull</h1>
+              <a href="./home.html"><i class="bi bi-chevron-right"></i>Ballina</a>
+              <a href="./historiku.html"><i class="bi bi-chevron-right"></i>Historiku</a>
+              <a href="./eksponantet"><i class="bi bi-chevron-right"></i>Eksponantet</a>
+              <a href="./aktivitetet.html"><i class="bi bi-chevron-right"></i>Aktivitetet</a>
+          </div>
+  
+          <div class="footer-contact">
+              <h1 class="text-uppercase">Na kontaktoni</h1>
+              <p><i class="bi bi-chevron-right"></i>Ferizaj, Kosova</p>
+              <p><i class="bi bi-chevron-right"></i>ilir-bytyci@hotmail.com</p>
+              <p><i class="bi bi-chevron-right"></i>+383 45 111 222</p>
+              <p><i class="bi bi-chevron-right"></i>+383 49 111 222</p>
+          </div>
+  
+          <div class="lokacioni">
+            <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=Ferizaj,%20Ferizaj&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 600px; height: 400px;"></iframe><a href="https://technologg.com/how-to-change-screen-orientation-in-windows-11/" style="display:none">How to Change Screen Orientation in Windows 11</a><style>.mapouter{position:relative;text-align:right;height:400px;width:600px;}</style><style>.gmap_canvas{overflow:hidden;background:none!important;height:400px;width:600px;}</style></div></div>
+          </div>
+        </div>
+
+        <hr>
+        <p class="copyright text-uppercase d-flex justify-content-center">&copy Copyright 2022 <span>Site by Aroma, Blerona, Elida, Qendresa</span></p>
+       
+      </footer>
+      <!-- Footer mbaron ketu ketu -->
+    </div>
+  </body>
+</html>

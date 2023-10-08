@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Jquery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="./Js/main.js"></script>
+
+    <!-- Chart Js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Muzeu i Ferizajit</title>
+  </head>
+  <body>
+    <div class="home-container container-fluid p-0">
+      <div id="mySidebar" class="sidebar sidebar-display">
+        <button class="close-btn"><i class="bi bi-x"></i></button>
+        <div class="text-center">
+          <a class="navbar-brand text-light" href="./administrimiHome.html">
+            <img src="./image/logo.png" class="img-fluid" alt="" />
+          </a>
+        </div>
+
+        <ul>
+          <li>
+            <a href="./administrimiHome.html" class="active">Administrimi</a>
+          </li>
+          <li><a href="./administrimiHistoriku.html">Historiku</a></li>
+          <li><a href="./administrimiEksponatet.html">Eksponatet</a></li>
+          <li><a href="./administrimiAktivitetet.html">Aktivitetet</a></li>
+        </ul>
+
+        <div class="text-center logout-btn-container">
+          <a class="logout btn btn-v1 btn-outline-light" href="./home.html"
+            >Shkyçu</a
+          >
+        </div>
+      </div>
+
+      <div id="main" class="dashboard administrimi-dashboard">
+        <button class="openbtn">
+          <i class="bi bi-justify"></i>
+        </button>
+        <h1>Mirësevini, administrator</h1>
+
+        <div class="postimet row text-center justify-content-between">
+          <div class="postimi col-8 col-sm-7 col-md-5 col-xl-4">
+            <h3
+              class="text-uppercase d-flex justify-content-center align-items-center"
+            >
+              <span class="line line-v2"></span>Historiku<span
+                class="line line-v2"
+              ></span>
+            </h3>
+
+            <p><b>Postime:</b> 1</p>
+
+            <a
+              class="btn btn-v3 btn-outline-light"
+              href="./administrimiHistoriku.html"
+              >Shto</a
+            >
+          </div>
+          <div class="postimi col-8 col-sm-7 col-md-5 col-xl-4">
+            <h3
+              class="text-uppercase d-flex justify-content-center align-items-center"
+            >
+              <span class="line line-v2"></span>Eksponatet<span
+                class="line line-v2"
+              ></span>
+            </h3>
+
+            <p><b>Postime:</b> 12</p>
+
+            <a
+              class="btn btn-v3 btn-outline-light"
+              href="./administrimiEksponatet.html"
+              >Shto</a
+            >
+          </div>
+          <div class="postimi col-8 col-sm-7 col-md-5 col-xl-4">
+            <h3
+              class="text-uppercase d-flex justify-content-center align-items-center"
+            >
+              <span class="line line-v2"></span>Aktivitetet<span
+                class="line line-v2"
+              ></span>
+            </h3>
+
+            <p><b>Postime:</b> 9</p>
+
+            <a
+              class="btn btn-v3 btn-outline-light"
+              href="./administrimiAktivitetet.html"
+              >Shto</a
+            >
+          </div>
+        </div>
+
+        <div class="diagrams row justify-content-between">
+          <div class="diagram col-xl-8 col-12">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="diagram col-xl-4 col-12">
+            <canvas
+              id="myChart2"
+            ></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var xValues = ["Janar", "Shkurt", "Mars", "Prill", "Maj", "Qeshor","Korrik", "Gusht", "Shtator", "Tetor", "Nentor", "Dhjetor"];
+      var yValues = [1000, 900, 800, 700, 600, 800, 900, 650];
+      var barColors = ["#7f0b28", "#212529", "#282828", "#cbcbcb","#cbcbcb", "#282828", "#7f0b28", "#cbcbcb"];
+
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "Shikimet 2023",
+          },
+        },
+      });
+
+      var xValues2 = ["Janar", "Shkurt", "Mars", "Prill", "Maj"];
+      var yValues2 = [55, 49, 44, 24, 15];
+      var barColors2 = ["#7f0b28", "#212529", "#282828", "#cbcbcb","#212529"];
+
+      new Chart("myChart2", {
+        type: "doughnut",
+        data: {
+          labels: xValues2,
+          datasets: [
+            {
+              backgroundColor: barColors2,
+              data: yValues2,
+            },
+          ],
+        },
+        options: {
+          title: {
+            display: true,
+            text: "Postimet 2023",
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

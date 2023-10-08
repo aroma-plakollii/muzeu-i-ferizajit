@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Jquery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="./Js/main.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Muzeu i Ferizajit</title>
+  </head>
+  <body>
+    <div class="home-container container-fluid p-0">
+      <div id="mySidebar" class="sidebar sidebar-display">
+        <button class="close-btn"><i class="bi bi-x"></i></button>
+        <div class="text-center">
+          <a class="navbar-brand text-light" href="./administrimiHome.html">
+            <img src="./image/logo.png" class="img-fluid" alt="" />
+          </a>
+        </div>
+
+        <ul>
+          <li><a href="./administrimiHome.html">Administrimi</a></li>
+          <li><a href="./administrimiHistoriku.html">Historiku</a></li>
+          <li><a href="./administrimiEksponatet.html" class="active">Eksponatet</a></li>
+          <li><a href="./administrimiAktivitetet.html">Aktivitetet</a></li>
+        </ul>
+
+        <div class="text-center logout-btn-container">
+          <a class="logout btn btn-v1 btn-outline-light" href="./home.html"
+            >Shkyçu</a
+          >
+        </div>
+      </div>
+
+      <div id="main" class="dashboard">
+        <button class="openbtn">
+          <i class="bi bi-justify"></i>
+        </button>
+        <h1
+          class="text-uppercase d-flex justify-content-center align-items-center"
+        >
+          <span class="line line-v3"></span>Eksponatet<span
+            class="line line-v3"
+          ></span>
+        </h1>
+
+        <!-- Button trigger modal -->
+        <div class="text-end">
+          <a
+            type="button"
+            class="btn btn-v2 btn-outline-light text-center modal-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Shto
+          </a>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel">
+                  Shto Eksponanten
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form action="" class="modal-form">
+                  <div>
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Zgjedh Foton</label
+                    >
+                    <input class="form-control" type="file" id="formFile" />
+                  </div>
+                  <div>
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Titulli</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                    />
+                  </div>
+                  <div>
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Pershkrimi</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Data</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-v1 btn-outline-light"
+                  data-bs-dismiss="modal"
+                >
+                  Mbylle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="table-container mx-auto">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Foto</th>
+                <th scope="col">Titulli</th>
+                <th scope="col">Pershkrimi</th>
+                <th scope="col">Kategoria</th>
+                <th scope="col">Data</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>foto1.jpg</td>
+                <td>Historiku</td>
+                <td>
+                  Lorem ipsum <span class="pershkrimi">dolor sit amet consectetur adipisicing elit.</span>
+                </td>
+                <td>Kategoria 2</td>
+                <td>26/11/2022</td>
+                <td class="text-center"><button class="edit">Edito</button> <button class="delete">Fshij</button></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>foto2.jpg</td>
+                <td>Muzeu</td>
+                <td>
+                  Lorem ipsum <span class="pershkrimi">dolor sit amet consectetur adipisicing elit.</span>
+                </td>
+                <td>Kategoria 1</td>
+                <td>28/11/2022</td>
+                <td class="text-center"><button class="edit">Edito</button> <button class="delete">Fshij</button></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>foto3.jpg</td>
+                <td>Ferizaji</td>
+                <td>
+                  Lorem ipsum <span class="pershkrimi">dolor sit amet consectetur adipisicing elit.</span>
+                </td>
+                <td>Kategoria 2</td>
+                <td>28/11/2022</td>
+                <td class="text-center"><button class="edit">Edito</button> <button class="delete">Fshij</button></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>foto4.jpg</td>
+                <td>Koleksioni</td>
+                <td>
+                  Lorem ipsum <span class="pershkrimi">dolor sit amet consectetur adipisicing elit.</span>
+                </td>
+                <td>Kategoria 3</td>
+                <td>29/11/2022</td>
+                <td class="text-center"><button class="edit">Edito</button> <button class="delete">Fshij</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
